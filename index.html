@@ -9,15 +9,14 @@
 
     <h1>Say Hello!</h1>
     <form>
-
       <div class="name">
         <label for="name">Your Name</label>
-        <input required id="name" type="name" name="name" placeholder="Your Name">
+        <input class="line" required id="name" type="name" name="name" placeholder="Your Name">
       </div>
 
       <div class="email">
         <label for="email">Email</label>
-        <input
+        <input class="line"
         placeholder="Enter your email address"
           minlength="5"
           maxlength="20"
@@ -29,7 +28,7 @@
 
       <div class="neededservices">
         <label for="needed services">Needed Services</label>
-        <select id="Choose Services" name="Choose Services">
+        <select class="line" id="Choose Services" name="Choose Services">
          <option value="choose service" >Choose Service</option>
          <option value="Vet">Veterinary</option>
          <option value="Med">Medical</option>
@@ -40,7 +39,7 @@
       <div class="budget">
         <label for="Budget">Budget</label>
         <div>
-        <select id="select budget" name="Select Budget" >
+        <select class="line" id="select budget" name="Select Budget" >
         <option calue="Choose Budget" > Choose Budget</option>
          <option value="£0-£100">£0-£100</option>
          <option value="£100-£200">£100-£200</option>
@@ -50,7 +49,7 @@
 
       <div class="message">
         <label for="message">Message</label>
-        <input required id="message" type="message" name="message"
+        <input class="line" required id="message" type="message" name="message"
          placeholder="Your message here">
       </div>
 
