@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>Stylish Form</title>
   </head>
-  <body id="grad">
-    <form>
-      <h1>Say Hello!</h1>
+  <body>
 
-      <div>
-        <label for="name" class="left">Your name</label>
-        <input
-          id="name"
-          type="name"
-          name="name"
-          input
-          placeholder="Enter your name"
-        />
+    <h1>Say Hello!</h1>
+    <form>
+
+      <div class="name">
+        <label for="name">Your Name</label>
+        <input required id="name" type="name" name="name" placeholder="Your Name">
       </div>
 
-      <div>
+      <div class="email">
         <label for="email">Email</label>
         <input
-          id="email"
-          type="email"
-          name="email"
-          input
-          placeholder="Enter your email address"
-          required
-        />
-      </div>
+        placeholder="Enter your email address"
+          minlength="5"
+          maxlength="20"
+          id="password"
+          type="password"
+          name="password"
+        >
+      </div>      
 
-      <div>
-        <label for="neededservices">Needed Services</label>
-        <select name="neededservices" input placeholder="Choose services">
-          <option value="veterinary">veterinary</option>
-          <option value="medical">medical</option>
-          <option value="optimology">optimology</option>
+      <div class="neededservices">
+        <label for="needed services">Needed Services</label>
+        <select id="Choose Services" name="Choose Services">
+         <option value="choose service" >Choose Service</option>
+         <option value="Vet">Veterinary</option>
+         <option value="Med">Medical</option>
+         <option value="Opt">Optimology</option>
         </select>
       </div>
 
-      <div>
+      <div class="budget">
         <label for="Budget">Budget</label>
-        <select name="Budget">
-          <option value="£1-£100">£1-£100</option>
-          <option value="£100-£200">£100-£200</option>
-          <option value="£200-£300">£200-£300</option>
+        <div>
+        <select id="select budget" name="Select Budget" >
+        <option calue="Choose Budget" > Choose Budget</option>
+         <option value="£0-£100">£0-£100</option>
+         <option value="£100-£200">£100-£200</option>
+         <option value="£200-£500">£200-£500</option>
         </select>
       </div>
 
-      <div>
-        <label for="Message">Message</label>
-        <input
-          id="Message"
-          type="Message"
-          name="Message"
-          input
-          placeholder="Your message here"
-        />
+      <div class="message">
+        <label for="message">Message</label>
+        <input required id="message" type="message" name="message"
+         placeholder="Your message here">
       </div>
+
+      <div class="button">
+        <div class="">
+          </div>
+        <button type="submit" >Submit</button>
+      </div>
+      <!-- <input type="submit" value="click me!"> -->
     </form>
+
+
   </body>
 </html>
